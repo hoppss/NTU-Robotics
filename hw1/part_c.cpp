@@ -53,6 +53,7 @@ int main(int argc, char **argv)
 	keyHandler.addKeyHandler('z', new ArFunctor1C<ArRobot, double>(robot, &ArRobot::setVel, 500));
 	keyHandler.addKeyHandler('x', new ArFunctor1C<ArRobot, double>(robot, &ArRobot::setVel, 50));
 	keyHandler.addKeyHandler('c', new ArFunctor1C<ArRobot, double>(robot, &ArRobot::setRotVel, 50));
+	keyHandler.addKeyHandler('v', new ArFunctor1C<ArRobot, double>(robot, &ArRobot::setRotVel, 0));
 	
 	// 3. Unlock the robot
 	robot.unlock();
